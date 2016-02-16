@@ -42,5 +42,22 @@ Template.Home.events({
             scrollTop: $('.welcomeBanner').offset().top
         }, 500);
         event.preventDefault();
+    },
+    'click #login': function(e){
+        $('.modal-login').fadeIn(400);
+        $('.modal-dialog').slideDown(400);
+        $("body").css("overflow","hidden");
+        e.preventDefault();
+    },
+    'click [data-dismiss="modal"]': function(e){
+        $('.modal-login').fadeOut(400);
+        $('.modal-dialog').slideUp(400);
+        $("body").css("overflow","auto");
+        e.preventDefault();
     }
 });
+
+Template.Home.rendered = function()
+{
+    Accounts._loginButtonsSession.set('dropdownVisible', true);
+};

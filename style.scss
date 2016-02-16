@@ -5,242 +5,361 @@ $dark : #1F2C33;
 $orange: #ff9900;
 $dRed: #81191F;
 $yellow: #e3ed6a;
+$twitter: #59ADEA;
+$facebook: #3A5795;
+$green: #4eaa0e;
 
 *{
     font-family: 'Raleway', sans-serif;
 }
 
-.welcomeBanner{
-    position: absolute;
-    top: 0;
-    right: 0;
-    clear: both;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(rgba(233, 107, 86,0.3),rgba(233, 107, 86,0.2)),url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Milky_Way_IR_Spitzer.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
-    a#login{
-        text-decoration: none;
+.Home{
+    .welcomeBanner{
         position: absolute;
-        top: 20px;
-        right: 20px;
-        border: 1px solid $white;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        color: $white;
-        font-size: 25px;
-        padding: 3px;
-        &:hover{
-            background: $white;
-            color: $dark;
-            cursor: pointer;
+        top: 0;
+        right: 0;
+        clear: both;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(rgba(233, 107, 86,0.3),rgba(233, 107, 86,0.2)),url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Milky_Way_IR_Spitzer.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        text-align: center;
+        a#login{
+            text-decoration: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 1px solid $white;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            color: $white;
+            font-size: 25px;
+            padding: 3px;
+            &:hover{
+                background: $white;
+                color: $dark;
+                cursor: pointer;
+            }
         }
-    }
-    h1{
-        color: $white;
-        font-size: 35px;
-    }
-    #join{
-        font-size: 60px;
-        font-family: 'Lobster', cursive;
+        h1{
+            color: $white;
+            font-size: 35px;
+        }
+        #join{
+            font-size: 60px;
+            font-family: 'Lobster', cursive;
 
-    }
-    #welcome{
-        margin-top: 200px;
-        color: $orange;
-    }
-    h3{
-        color: $dark;
-        font-size: 30px;
-        font-weight: 700;
-    }
-    a#tell-more{
-        text-decoration: none;
-        color: $white;
-        font-size: 55px;
-        padding: 3px;
-        &:hover{
-            color: $dark;
-            cursor: pointer;
         }
-    }
-    ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        li{
-            display: inline;
-            font-size: 20px;
-            a{
-                text-decoration: none;
-                color: $white;
-                padding: 5px;
-                &:hover{
-                    color: $orange;
+        #welcome{
+            margin-top: 200px;
+            color: $orange;
+        }
+        h3{
+            color: $dark;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        a#tell-more{
+            text-decoration: none;
+            color: $white;
+            font-size: 55px;
+            padding: 3px;
+            &:hover{
+                color: $dark;
+                cursor: pointer;
+            }
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li{
+                display: inline;
+                font-size: 20px;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    padding: 5px;
+                    &:hover{
+                        color: $orange;
+                    }
                 }
             }
         }
     }
-}
 
-.knowlegde{
-    position: absolute;
-    top: 100vh;
-    right: 0;
-    height: 50vh;
-    width: 100vw;
-    background: $orange;
-    text-align: center;
-    .friends{
-        display: none;
-        position: relative;
-        height: 350px;
-        width: 1000px;
-        margin: 0 auto;
-        p{
-            position: absolute;
-            padding: 5px;
-            font-size: 20px;
-            color: $white;
+    .knowlegde{
+        position: absolute;
+        top: 100vh;
+        right: 0;
+        height: 50vh;
+        width: 100vw;
+        background: $orange;
+        text-align: center;
+        .friends{
+            display: none;
+            position: relative;
+            height: 350px;
+            width: 1000px;
+            margin: 0 auto;
+            p{
+                position: absolute;
+                padding: 5px;
+                font-size: 20px;
+                color: $white;
+            }
+            p#users{
+                font-size: 140px;
+                top: -100px;
+                left: 0;
+                opacity: 0.25;
+                line-height: 145px;
+            }
+            p#friends{
+                font-size: 30px;
+                top: 0px;
+                left: 40px;
+                letter-spacing: 1.1px;
+            }
+            p#more{
+                font-size: 100px;
+                top: 20px;
+                left: 5px;
+            }
+            .fa{
+                color: $dark;
+            }
         }
-        p#users{
-            font-size: 140px;
-            top: -100px;
-            left: 0;
-            opacity: 0.25;
-            line-height: 145px;
+    }
+
+    .description{
+        position: absolute;
+        top: 150vh;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        background: $dark;
+        .chart{
+            height: 100%;
+            position: relative;
+            margin: 0 auto;
+            font-size: 95vh;
+            line-height: 95vh;
+            text-align: center;
+            color: rgba(255,153,0,0.2);
+            p{
+                font-size: 20px;
+                line-height: 21px;
+                color: $white;
+                position: absolute;
+            }
+            p#bates{
+                top: 10px;
+                left: 30px;
+                span{
+                    font-family: 'Indie Flower', cursive;
+                    font-weight: 700;
+                    font-size: 33px;
+                }
+            }
+            p#exp{
+                top: 40px;
+                left: 30px;
+            }
+            p#wisest{
+                top: 70px;
+                left: 30px;
+                span{
+                    font-weight: 700;
+                }
+            }
+
         }
-        p#friends{
-            font-size: 30px;
-            top: 0px;
-            left: 40px;
-            letter-spacing: 1.1px;
-        }
-        p#more{
-            font-size: 100px;
-            top: 20px;
-            left: 5px;
+    }
+
+    .topics{
+        position: absolute;
+        top: 250vh;
+        width: 100vw;
+        right: 0;
+        height: 50vh;
+        background: $dRed;
+        text-align: center;
+        .tContainer{
+            display: none;
+            position: relative;
+            height: 350px;
+            width: 1000px;
+            margin: 0 auto;
+            img{
+                position: absolute;
+                top: 60px;
+                left: 0px;
+                height: 300px;
+                width: 1000px;
+            }
+            p{
+                position: absolute;
+                padding: 5px;
+                font-size: 20px;
+                color: $white;
+            }
+            p#count{
+                font-size: 80px;
+                // width: 40vw;
+                top: -100px;
+                left: 50px;
+                opacity: 0.25;
+                line-height: 145px;
+            }
+            p#search{
+                top: 90px;
+                left: 145px;
+            }
+            p#begin{
+                top: 30px;
+                left: 390px;
+            }
+            p#create{
+                top: 90px;
+                left: 655px;
+            }
         }
         .fa{
-            color: $dark;
+            color: $red;
         }
     }
-}
 
-.description{
-    position: absolute;
-    top: 150vh;
-    right: 0;
-    height: 100vh;
-    width: 100vw;
-    background: $dark;
-    .chart{
-        height: 100%;
-        position: relative;
-        margin: 0 auto;
-        font-size: 95vh;
-        line-height: 95vh;
-        text-align: center;
-        color: rgba(255,153,0,0.2);
-        p{
-            font-size: 20px;
-            line-height: 21px;
-            color: $white;
-            position: absolute;
-        }
-        p#bates{
-            top: 10px;
-            left: 30px;
-            span{
-                font-family: 'Indie Flower', cursive;
-                font-weight: 700;
-                font-size: 33px;
-            }
-        }
-        p#exp{
-            top: 40px;
-            left: 30px;
-        }
-        p#wisest{
-            top: 70px;
-            left: 30px;
-            span{
-                font-weight: 700;
-            }
-        }
-
-    }
-}
-
-.topics{
-    position: absolute;
-    top: 250vh;
-    width: 100vw;
-    right: 0;
-    height: 50vh;
-    background: $dRed;
-    text-align: center;
-    .tContainer{
+    #up{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 40px;
+        line-height: 20px;
+        color: $yellow;
         display: none;
-        position: relative;
-        height: 350px;
-        width: 1000px;
-        margin: 0 auto;
-        img{
-            position: absolute;
-            top: 60px;
-            left: 0px;
-            height: 300px;
-            width: 1000px;
-        }
-        p{
-            position: absolute;
-            padding: 5px;
-            font-size: 20px;
-            color: $white;
-        }
-        p#count{
-            font-size: 80px;
-            // width: 40vw;
-            top: -100px;
-            left: 50px;
-            opacity: 0.25;
-            line-height: 145px;
-        }
-        p#search{
-            top: 90px;
-            left: 145px;
-        }
-        p#begin{
-            top: 30px;
-            left: 390px;
-        }
-        p#create{
-            top: 90px;
-            left: 655px;
+        &:hover{
+            cursor: pointer;
+            color: #b9c252;
         }
     }
-    .fa{
-        color: $red;
-    }
-}
-
-#up{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 40px;
-    line-height: 20px;
-    color: $yellow;
-    display: none;
-    &:hover{
-        cursor: pointer;
-        color: #b9c252;
+    .modal-login{
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0,0,0,0.5);
+        .modal-dialog{
+            position: absolute;
+            top: 25vh;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            .modal-content{
+                background: $white;
+                .modal-header{
+                    text-align: center;
+                    h4{
+                        font-weight: 700;
+                        font-size: 30px;
+                        color: $dark;
+                    }
+                    border: 0;
+                }
+                .modal-body{
+                    text-align: center;
+                    position: relative;
+                    .social{
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid $dark;
+                        a#twitter, a#facebook{
+                            text-decoration: none;
+                            border: 1px solid $twitter;
+                            border-radius: 6px;
+                            -moz-border-radius: 6px;
+                            -webkit-border-radius: 6px;
+                            color: $twitter;
+                            background: $white;
+                            font-size: 20px;
+                            padding: 10px;
+                            transition: background 1s;
+                            -moz-transition: background 1s;
+                            -webkit-transition: background 1s;
+                            &:hover{
+                                color: $white;
+                                background: $twitter;
+                                transition: background 1s;
+                                -moz-transition: background 1s;
+                                -webkit-transition: background 1s;
+                            }
+                        }
+                        a#facebook{
+                            color: $facebook;
+                            border: 1px solid $facebook;
+                            &:hover{
+                                background: $facebook;
+                                color: $white;
+                            }
+                        }
+                    }
+                    .credentials{
+                        padding-top: 15px;
+                        text-align: left;
+                        #login-sign-in-link, .login-close-text{
+                            display: none;
+                        }
+                        #login-email, #login-password{
+                            width: 268px;
+                            font-size: 16px;
+                            border: 0;
+                            border-bottom: 1px solid #ededed;
+                            outline: none;
+                        }
+                        #login-email-label, #login-password-label{
+                            font-size: 18px;
+                        }
+                        .error-message{
+                            color: $red;
+                            font-size: 15px;
+                        }
+                        #login-buttons-password{
+                            text-align: center;
+                            color: $green;
+                            font-size: 18px;
+                            &:hover{
+                                cursor: pointer;
+                                text-decoration: underline;
+                                color: #387a09;
+                            }
+                        }
+                        #signup-link{
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        #back-to-login-link{
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        #forgot-password-link{
+                            position: absolute;
+                            right: 20px;
+                            bottom: 62px;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
