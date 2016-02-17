@@ -38,3 +38,7 @@ accounts-ui-unstyled
 timmyg13:countup
 accounts-base
 twbs:bootstrap
+accounts-facebook
+accounts-twitter
+http
+service-configuration
