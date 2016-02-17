@@ -54,6 +54,14 @@ Template.Home.events({
         $('.modal-dialog').slideUp(400);
         $("body").css("overflow","auto");
         e.preventDefault();
+    },
+    'click [data-action=ttLogin]': function(e){
+        Meteor.loginWithTwitter();
+        e.preventDefault();
+    },
+    'click [data-action=fbLogin]': function(e){
+        Meteor.loginWithFacebook();
+        e.preventDefault();
     }
 });
 

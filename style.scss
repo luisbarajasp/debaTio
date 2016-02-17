@@ -315,14 +315,14 @@ $green: #4eaa0e;
                         #login-sign-in-link, .login-close-text{
                             display: none;
                         }
-                        #login-email, #login-password{
-                            width: 268px;
+                        #login-email, #login-password, #forgot-password-email{
+                            width: 100%;
                             font-size: 16px;
                             border: 0;
                             border-bottom: 1px solid #ededed;
                             outline: none;
                         }
-                        #login-email-label, #login-password-label{
+                        #login-email-label, #login-password-label, #forgot-password-email-label{
                             font-size: 18px;
                         }
                         .error-message{
@@ -355,6 +355,19 @@ $green: #4eaa0e;
                             bottom: 62px;
                             &:hover{
                                 cursor: pointer;
+                            }
+                        }
+                        #login-buttons-facebook, .or, #login-buttons-twitter{
+                            display: none;
+                        }
+                        #login-buttons-forgot-password{
+                            text-align: center;
+                            font-size: 18px;
+                            color: rgb(173, 186, 20);
+                            &:hover{
+                                cursor: pointer;
+                                text-decoration: underline;
+                                color: rgb(127, 136, 16);
                             }
                         }
                     }
