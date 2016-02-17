@@ -115,20 +115,20 @@ $green: #4eaa0e;
             }
             p#users{
                 font-size: 140px;
-                top: -100px;
+                top: 0px;
                 left: 0;
                 opacity: 0.25;
                 line-height: 145px;
             }
             p#friends{
                 font-size: 30px;
-                top: 0px;
+                top: 40px;
                 left: 40px;
                 letter-spacing: 1.1px;
             }
             p#more{
                 font-size: 100px;
-                top: 20px;
+                top: 120px;
                 left: 5px;
             }
             .fa{
@@ -212,7 +212,7 @@ $green: #4eaa0e;
             p#count{
                 font-size: 80px;
                 // width: 40vw;
-                top: -100px;
+                top: -30px;
                 left: 50px;
                 opacity: 0.25;
                 line-height: 145px;
