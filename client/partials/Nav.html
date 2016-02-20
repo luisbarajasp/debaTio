@@ -5,6 +5,11 @@
                 <li><a href="/recent"><i class="fa fa-clock"></i> Recent</a></li>
                 <li><a href="/popular"><i class="fa fa-star"> Popular</i></a></li>
                 <li><a href="/new"><i class="fa fa-plus"> New Post</i></a></li>
+                {{#if currentUser}}
+                    <li><a id="logout" href="">Log out</a></li>
+                {{else}}
+                    
+                {{/if}}
             </ul>
         </nav>
     </header>

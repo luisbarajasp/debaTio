@@ -1,7 +1,5 @@
 <template name="Main">
-    {{#if Meteor.userId}}
-        {{> Nav}}
-    {{/if}}
+    {{> Nav}}
     <main class="main-layout">
         {{> Template.dynamic template=main}}
     </main>

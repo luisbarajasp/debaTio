@@ -248,127 +248,128 @@ $green: #4eaa0e;
             color: #b9c252;
         }
     }
-    .modal-login{
+}
+
+.modal-login{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.5);
+    .modal-dialog{
         position: absolute;
-        display: none;
-        top: 0;
+        top: 25vh;
         left: 0;
-        height: 100vh;
-        width: 100vw;
-        background: rgba(0,0,0,0.5);
-        .modal-dialog{
-            position: absolute;
-            top: 25vh;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            .modal-content{
-                background: $white;
-                .modal-header{
-                    text-align: center;
-                    h4{
-                        font-weight: 700;
-                        font-size: 30px;
-                        color: $dark;
-                    }
-                    border: 0;
+        right: 0;
+        margin: 0 auto;
+        .modal-content{
+            background: $white;
+            .modal-header{
+                text-align: center;
+                h4{
+                    font-weight: 700;
+                    font-size: 30px;
+                    color: $dark;
                 }
-                .modal-body{
-                    text-align: center;
-                    position: relative;
-                    .social{
-                        padding-bottom: 20px;
-                        border-bottom: 1px solid $dark;
-                        a#twitter, a#facebook{
-                            text-decoration: none;
-                            border: 1px solid $twitter;
-                            border-radius: 6px;
-                            -moz-border-radius: 6px;
-                            -webkit-border-radius: 6px;
-                            color: $twitter;
-                            background: $white;
-                            font-size: 20px;
-                            padding: 10px;
+                border: 0;
+            }
+            .modal-body{
+                text-align: center;
+                position: relative;
+                .social{
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid $dark;
+                    a#twitter, a#facebook{
+                        text-decoration: none;
+                        border: 1px solid $twitter;
+                        border-radius: 6px;
+                        -moz-border-radius: 6px;
+                        -webkit-border-radius: 6px;
+                        color: $twitter;
+                        background: $white;
+                        font-size: 20px;
+                        padding: 10px;
+                        transition: background 1s;
+                        -moz-transition: background 1s;
+                        -webkit-transition: background 1s;
+                        &:hover{
+                            color: $white;
+                            background: $twitter;
                             transition: background 1s;
                             -moz-transition: background 1s;
                             -webkit-transition: background 1s;
-                            &:hover{
-                                color: $white;
-                                background: $twitter;
-                                transition: background 1s;
-                                -moz-transition: background 1s;
-                                -webkit-transition: background 1s;
-                            }
-                        }
-                        a#facebook{
-                            color: $facebook;
-                            border: 1px solid $facebook;
-                            &:hover{
-                                background: $facebook;
-                                color: $white;
-                            }
                         }
                     }
-                    .credentials{
-                        padding-top: 15px;
-                        text-align: left;
-                        #login-sign-in-link, .login-close-text{
-                            display: none;
+                    a#facebook{
+                        color: $facebook;
+                        border: 1px solid $facebook;
+                        &:hover{
+                            background: $facebook;
+                            color: $white;
                         }
-                        #login-email, #login-password, #forgot-password-email{
-                            width: 100%;
-                            font-size: 16px;
-                            border: 0;
-                            border-bottom: 1px solid #ededed;
-                            outline: none;
+                    }
+                }
+                .credentials{
+                    padding-top: 15px;
+                    text-align: left;
+                    #login-sign-in-link, .login-close-text{
+                        display: none;
+                    }
+                    #login-email, #login-password, #forgot-password-email{
+                        width: 100%;
+                        font-size: 16px;
+                        border: 0;
+                        border-bottom: 1px solid #ededed;
+                        outline: none;
+                    }
+                    #login-email-label, #login-password-label, #forgot-password-email-label{
+                        font-size: 18px;
+                    }
+                    .error-message{
+                        color: $red;
+                        font-size: 15px;
+                    }
+                    #login-buttons-password{
+                        text-align: center;
+                        color: $green;
+                        font-size: 18px;
+                        &:hover{
+                            cursor: pointer;
+                            text-decoration: underline;
+                            color: #387a09;
                         }
-                        #login-email-label, #login-password-label, #forgot-password-email-label{
-                            font-size: 18px;
+                    }
+                    #signup-link{
+                        &:hover{
+                            cursor: pointer;
                         }
-                        .error-message{
-                            color: $red;
-                            font-size: 15px;
+                    }
+                    #back-to-login-link{
+                        &:hover{
+                            cursor: pointer;
                         }
-                        #login-buttons-password{
-                            text-align: center;
-                            color: $green;
-                            font-size: 18px;
-                            &:hover{
-                                cursor: pointer;
-                                text-decoration: underline;
-                                color: #387a09;
-                            }
+                    }
+                    #forgot-password-link{
+                        position: absolute;
+                        right: 20px;
+                        bottom: 62px;
+                        &:hover{
+                            cursor: pointer;
                         }
-                        #signup-link{
-                            &:hover{
-                                cursor: pointer;
-                            }
-                        }
-                        #back-to-login-link{
-                            &:hover{
-                                cursor: pointer;
-                            }
-                        }
-                        #forgot-password-link{
-                            position: absolute;
-                            right: 20px;
-                            bottom: 62px;
-                            &:hover{
-                                cursor: pointer;
-                            }
-                        }
-                        #login-buttons-facebook, .or, #login-buttons-twitter{
-                            display: none;
-                        }
-                        #login-buttons-forgot-password{
-                            text-align: center;
-                            font-size: 18px;
-                            color: rgb(173, 186, 20);
-                            &:hover{
-                                cursor: pointer;
-                                text-decoration: underline;
-                                color: rgb(127, 136, 16);
-                            }
+                    }
+                    #login-buttons-facebook, .or, #login-buttons-twitter{
+                        display: none;
+                    }
+                    #login-buttons-forgot-password{
+                        text-align: center;
+                        font-size: 18px;
+                        color: rgb(173, 186, 20);
+                        &:hover{
+                            cursor: pointer;
+                            text-decoration: underline;
+                            color: rgb(127, 136, 16);
                         }
                     }
                 }
